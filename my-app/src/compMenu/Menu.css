@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #282c34;
+    width: 300px;
+    height: 500px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    padding: 5px 0px;
+}
+
+.list-parent a {
+    text-decoration: none;
+   color: white;
+    padding: 5px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.child-list a{
+    color: #61dafb;
+}
+
+a:hover {
+    background-color: #717784;
+}
+
+.burger {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .logo {
+        animation: logo-spin infinite 20s linear;
+    }
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.parent{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100px;
+}
+
